@@ -13,8 +13,8 @@
 
     <header>
       <div class="container">
-        <h1>{{ Erika Faustino | default: site.github.github.io }}</h1>
-        <h2>{{ Portifolio | default: https://erikasfs.github.io/.github.io/ }}</h2>
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
         <section id="downloads">
           {% if site.show_downloads %}
